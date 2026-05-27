@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title> Template: Calendar </title>
+			
+			<meta charset="utf-8">
+			<link rel="icon" type="images/png" href="images/favicon.png">
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		
+			<style>
+			
+				*{
+					font-family: 'Roboto Mono';
+					}
+			
+				header{
+					height: 155px;
+					width: 100%;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					background-color: #15388c;
+					}
+					
+				#logo{
+					height: 155px;
+					width: 18%;
+					}
+					
+				nav{
+					height: 150px;
+					width: 62%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				a{
+					margin:auto;
+					font-size: 20px;
+					cursor: pointer;
+					color: white;
+					text-decoration: none;
+					}
+					
+				#buttoncontainer{
+					height:155px;
+					width: 20%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				#login:hover{
+					background-color: #D1CFCF;
+					color: #15388c;
+					}
+					
+				#signup:hover{
+					background-color: #D1CFCF;
+					color: #15388c;
+					}
+					
+				#signup{
+					height: 45px;
+					width: 35%;
+					font-size: 15px;
+					border-radius: 20px;
+					cursor: pointer;
+					color: #15388c;
+					}
+				
+				#login{
+					height: 45px;
+					width: 35%;
+					font-size: 15px;
+					border-radius: 20px;
+					cursor: pointer;
+					color: #15388c;
+					margin-left: 10px;
+					}
+					
+				main{
+					height: 850px;
+					width: 100%;
+					font-size: 20px;
+					}
+					
+				table{
+					height: 300px;
+					width: 85%;
+					font-size: 16px;
+					font-family: 'Roboto Mono';
+					text-align: center;
+					justify-content: center;
+					align-items: center;
+					}
+					
+				#form{
+					height: 450px;
+					width: 100%;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 40px;
+					}
+						
+				#formbox{
+					height: 450px;
+					width: 50%;
+					background-color: #15388c;
+					position: absolute;
+					top: 10px;
+					left: 25%;
+					font-family: 'Roboto Mono';
+					color: white;
+					}
+					
+				#font{
+					font-size: 30px;
+					}
+					
+				footer{
+					height: 200px;
+					width: 100%;
+					padding: 20px;
+					}
+					
+				.footer-top{
+					height: 120px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				.socials{
+					height: 120px;
+					width: 50%;
+					display: flex; 
+					align-items: center;
+					justify-content: center;
+					margin: auto;
+					}
+					
+				.contact{
+					height: 120px;
+					width: 50%;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				#contactus{
+					height: 45px;
+					width: 25%;
+					background-color: #15388c;
+					color: #c2a54c;
+					margin-top: 35px;
+					margin-left: 300px;
+					justify-content: center;
+					align-items: center;
+					display: flex;
+					border-radius: 20px;
+					font-family: 'Roboto Mono';
+					}
+				
+				.footer-bottom{
+					height: 80px;
+					width: 100%;
+					text-align: right;
+					margin-top: 10px;
+					margin-left: 15px;
+					display: flex;
+					text-align: center;
+					justify-content: center;
+					text-size: 12px;
+					
+					}
+
+					
+
+			</style>
+			
+		</head>
+		
+		<body>
+		
+			<header>
+			
+				<div id="logo">
+					
+					<a href="index.html"><img src="images/primary1.png" height="155px" width="90%"></a>
+					
+				</div>
+			
+				<nav>
+				
+					<a href="menu.html"> Menu </a>
+					<a href="calendar.html"> Calendar </a>
+					<a href="contactus.html"> Contact Us </a>
+				
+				</nav>
+				
+				<div id="buttoncontainer">
+				
+					<button id="signup"> Sign Up </button>
+					<button id="login"> Log In </button>
+					
+				</div>
+			
+			</header>
+			
+			<main>
+			
+				<center><section id="table">
+				
+					<center><h2 style="font-family: 'Roboto Mono';"> Avaliable Catering </h2></center>
+				
+					<table border="7" style="border: 3px solid #c2a54c;">
+					
+						<tr id="font">
+							<td> March </td>
+							<td> April </td>
+							<td> May</td>
+							<td> June </td>
+							
+						</tr>
+						
+						<tr>
+						
+							<td> March 1st-Weston Library Park <br> 12pm-2pm </td>
+							<td> April 2nd-Vista Park <br> 4pm-6pm </td>
+							<td> May 1st-Free </td>
+							<td> June 1st-Free </td>
+						</tr>
+						
+						<tr>
+							<td> March 5th-Pembroke Pine Mall <br> 6pm-9:30pm </td>
+							<td> April 12th-Free </td>
+							<td> May 3rd-Free </td>
+							<td> June 4th-Free </td>
+							
+						</tr>
+						
+						<tr>
+						
+							<td> March 10th-Regional Park <br> 11am-2pm </td>
+							<td> April 13th-Vista Park <br> 1pm-2pm </td>
+							<td> May 7th-Free </td>
+							<td> June 13th-Free </td>
+							
+						</tr>
+						
+						<tr>
+							
+							<td> March 17th-Free </td>
+							<td> April 15th-Free </td>
+							<td> May 10th-Free </td>
+							<td> June 15th-Weston Town Center <br> 2pm-4pm </td>
+							
+						</tr>
+						
+						<tr>
+						
+							<td> March 30th-Weston Library <br> 3pm-4:30pm </td>
+							<td> April 20th-Free </td>
+							<td> May 18th-Regional Park <br> 4pm-5pm </td>
+							<td> June 21st-Weston Town Center <br> 3:30pm-4:30pm </td>
+							
+						</tr>
+		
+					</table></center>
+				</section>
+				
+				<section id="form">
+
+                    <img src="images/person.png" alt="stick figure eating aurora snowcone" height="300px" width="300px" style="position: absolute; right: 10px;" >
+				
+					<form>
+				
+						<div id="formbox">
+				
+							<center><h3> Set Up Date To Cater </h3>
+						
+							<div id="input-box">
+						
+								<input type="email" required="required">
+								<label> Email </label>
+							
+							</div>
+							
+							<br>
+							
+							<div id="input-box">
+							
+								<input type="password" required="required">
+								<label> Password </label>
+								
+							</div>
+
+							<div id="forgot">
+							
+								<a href="#" style="font-size: 14px;"> Forgot Password? </a>
+								
+							</div>
+							
+							<button type="submit" style="height: 20px; width: 45%; border: none; outline: none; border-radius: 30px; cursor: pointer;"> Login </button>
+							
+							<div id="register">
+							
+								<p> Don't have an account? <a href="#"> Register </a></p>
+								
+							</div>
+							
+							<label for="myDate"> Choose a Date: </label>
+							<input type="date" name="myDate" id="myDate">
+							
+							<br><br>
+							
+							<input type="submit" style="height: 40px; width:100px; border-radius: 40px; border: 3px solid #15388c; cursor: pointer;">
+							
+						</div></center>
+						
+					</form>
+			</main>
+			
+			<hr>
+			
+			<footer>
+			
+				<div class="footer-top">
+				
+					<div class="socials">
+					
+						<a href="https://www.facebook.com"><img src="images/facebook.png" height="79px" width="79px"alt="facebook logo"></a>
+						<a href="https://www.instagram.com"><img src="images/instagram.png" height="90px" width="90px" alt="instagram logo"></a>
+						<a href="https://www.tiktok.com"><img src="images/tiktok.png" height="56px" width="99px" alt="tiktok logo"></a>
+						<a href="https://www.x.com"><img src="images/x.png" height="50px" width="50px" alt="x logo"></a>
+						<a href="https://www.youtube.com"><img src="images/youtube.png" height="82px" width="82px" alt="youtube logo"></a>
+					
+					</div>
+				
+					<div class="contact">
+				
+						<a href="contactus.html"><button id="contactus"> Contact Us </a></button>
+					
+					</div>
+				
+				</div>
+				
+				<div class="footer-bottom">
+				
+						 Terms of Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+						 Private Notice &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Accessibility &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Feedback &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Copyright
+					
+				</div>
+				
+			</footer>
+			
+		</body>
+		
+	</html>
+	
+	

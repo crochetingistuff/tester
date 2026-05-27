@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title> Template: Menu </title>
+			
+			<meta charset="utf-8">
+			<link rel="icon" type="images/png" href="images/favicon.png">
+			
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		
+			<style>
+				
+				*{
+					margin: 0px;
+					padding: 0px;
+					font-family: 'Roboto Mono';
+				}
+				
+				header{
+					height: 155px;
+					width: 100%;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					background-color: #15388c;
+					}
+					
+				#logo{
+					height: 155px;
+					width: 18%;
+					}
+					
+				nav{
+					height: 150px;
+					width: 62%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				a{
+					margin:auto;
+					font-size: 20px;
+					cursor: pointer;
+					color: white;
+					text-decoration: none;
+					}
+					
+				#buttoncontainer{
+					height:155px;
+					width: 20%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				#signin{
+					height: 45px;
+					width: 35%;
+					font-size: 15px;
+					border-radius: 20px;
+					cursor: pointer;
+					color: #15388c;
+					}
+					
+				#signin:hover{
+					background-color: #D1CFCF;
+					color: #15388c;
+					}
+				
+				#login{
+					height: 45px;
+					width: 35%;
+					font-size: 15px;
+					border-radius: 20px;
+					cursor: pointer;
+					color: #15388c;
+					margin-left: 10px;
+					}
+					
+				#login:hover{
+					background-color: #D1CFCF;
+					color: #15388c;
+					}
+					
+				main{
+					height: 1275px;
+					width: 100%;
+					padding-top: 160px;
+					display: flex;
+					position: relative;
+					}
+					
+				table{
+					width: 99%;
+					height: 1200px;
+					display: flex;
+					margin-right: 300px;
+					position: absolute;
+					top: 50px;
+					}
+					
+				.signaturesnowcones-top{
+					height: 250px;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+	
+					}
+					
+				.sunrisesoar{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #15388c;
+					display:flex;
+					margin-right: 90px;
+					}
+					
+				#sunrisesoarimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 17px;
+					}	
+					
+				#sunrisesoarp{
+					height: 250px;
+					width: 60%;
+					margin-top: 45px;
+					font-size:12pt;
+					font-family: 'Roboto Mono';
+					}
+					
+				.falconfrostbite{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #15388c;
+					display: flex;
+					}
+					
+				#falconfrostbiteimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 17px;
+					}
+					
+				#falconfrostbitep{
+					height: 250px;
+					width: 60%;
+					margin-right: 16px;
+					margin-top: 35px;
+					font-size: 12pt;
+					font-family: 'Roboto Mono';
+					}
+					
+				.aurorafalcon{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #15388c;
+					display:flex;
+					margin-right: 90px;
+					}
+					
+				#aurorafalconimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 17px;
+					}
+					
+				#aurorafalconp{
+					height: 250px;
+					width: 60%;
+					margin-right: 16px;
+					margin-top: 45px;
+					font-size: 12pt;
+					font-family: 'Roboto Mono';
+					}
+					
+				.signaturesnowcones-bottom{
+					height: 250px;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					}
+					
+				.goldenfeather{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #c2a54c;
+					display:flex;
+					}
+					
+				#goldenfeatherimg{
+					height: 250px;
+					width: 40%;
+					}
+					
+				#goldenfeatherp{
+					height: 250px;
+					width: 60%;
+					font-size: 12pt;
+					font-family: 'Roboto Mono';
+					margin-top: 45px;
+					}
+					
+				.swirlingblue{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #c2a54c;
+					display: flex;
+					margin-right: 100px;
+					position: relative;
+					}
+					
+				#swirlingblueimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					margin-left: -30px;
+					position: absolute;
+					left: -2px;
+					}
+				
+				#swirlingbluep{
+					height: 250px;
+					width: 60%;
+					font-size: 12pt;
+					font-family: 'Roboto Mono';
+					margin-top: 45px;
+					position: absolute;
+					right: 10px;
+					}
+					
+				.falconsmelonpop{
+					height: 250px;
+					width: 95%;
+					border: 7px dotted #c2a54c;
+					display: flex;
+					}
+					
+				#falconsmelonpopimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					}
+					
+				#falconsmelonpopp{
+					height: 250px;
+					width: 60%;
+					font-size: 12pt;
+					font-family: 'Roboto Mono';
+					margin-top: 45px;
+					}
+					
+				.snowcone-top{
+					height: 250px;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					}
+					
+				.strawberry{
+					height: 250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #15388c;
+					}
+					
+				#strawberryimg{
+					height: 250px;
+					width:40%;
+					margin-top: 20px;
+					}
+					
+				#strawberryp{
+					height: 250px;
+					width:60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top:45px;
+					}
+					
+				.blueraspberry{
+					height: 250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #15388c;
+					}
+					
+				#blueraspberryimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					}
+					
+				#blueraspberryp{
+					height: 250px;
+					width: 60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top: 45px;
+					}
+					
+				.grape{
+					height: 250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #15388c;
+					}
+					
+				#grapeimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					}
+					
+				#grapep{
+					height: 250px;
+					width: 60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top: 45px;
+					}
+					
+				.lemonlime{
+					height:250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #c2a54c;
+					}
+					
+				#lemonlimeimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					}
+					
+				#lemonlimep{
+					height: 250px;
+					width:60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top: 45px;
+					}
+					
+				.cherry{
+					height:250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #c2a54c;
+					}
+					
+				#cherryimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;}
+					
+				#cherryp{
+					height: 250px;
+					width:60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top: 45px;
+					}
+					
+				.pinacolada{
+					height:250px;
+					width: 95%;
+					display: flex;
+					border: 7px dotted #c2a54c;
+					}
+					
+				#pinacoladaimg{
+					height: 250px;
+					width: 40%;
+					margin-top: 20px;
+					}
+
+				#pinacoladap{
+					height: 250px;
+					width:60%;
+					font-family: 'Roboto Mono';
+					font-size: 12pt;
+					margin-top: 45px;
+					}
+					
+				footer{
+					height: 200px;
+					width: 100%;
+					padding: 20px;
+					}
+					
+				.footer-top{
+					height: 120px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				.socials{
+					height: 120px;
+					width: 50%;
+					display: flex; 
+					align-items: center;
+					justify-content: center;
+					margin: auto;
+					}
+					
+				.contact{
+					height: 120px;
+					width: 50%;
+					align-items: center;
+					justify-content: center;
+					}
+					
+				#contactus{
+					height: 45px;
+					width: 25%;
+					background-color: #15388c;
+					color: #c2a54c;
+					margin-top: 35px;
+					margin-left: 300px;
+					justify-content: center;
+					align-items: center;
+					display: flex;
+					border-radius: 20px;
+					font-family: 'Roboto Mono';
+					}
+				
+				.footer-bottom{
+					height: 80px;
+					width: 100%;
+					text-align: right;
+					margin-top: 10px;
+					margin-left: 15px;
+					display: flex;
+					text-align: center;
+					justify-content: center;
+					text-size: 12px;
+					
+					}
+
+			</style>
+			
+		</head>
+		
+		<body>
+		
+			<header>
+			
+				<div id="logo">
+					
+					<a href="index.html"><img src="images/primary1.png" height="155px" width="90%"></a>
+					
+				</div>
+			
+				<nav>
+				
+					<a href="menu.html"> Menu </a>
+					<a href="calendar.html"> Calendar </a>
+					<a href="contactus.html"> Contact Us </a>
+				
+				</nav>
+				
+				<div id="buttoncontainer">
+				
+					<button id="signin"> Sign Up </button>
+					<button id="login"> Log In </button>
+					
+				</div>
+			
+			</header>
+			
+			<main>
+			
+				<table>
+					
+					<tr> 
+					
+						<th>
+						
+						<br>
+						
+							<h1 style="font-size: 36px"> Signature Snowcones </h1>
+							<br><br>
+							
+						</th>
+						
+					</tr>
+					
+					<tr>
+					
+						<div class="signaturesnowcones-top">
+							<th>
+							
+							<div class="sunrisesoar">
+					
+								<div id="sunrisesoarimg">
+						
+									<img src="images/sunrisesoar.png" alt="Sunrise Soar Snowcone" height="200px" width="210px">
+								
+								</div>
+							
+							
+								<div id="sunrisesoarp">
+								
+									<h3> Sunrise Soar $3.99 </h3><br>
+						
+									<p> Sunrise Soar is based on a falcon soaring over the sunrise. It has a cherry and mango flavor combonation. </p>
+								
+								</div>
+							
+							</div>
+						</th>
+						<th>	
+						
+							<div class="falconfrostbite">
+						
+								<div id="falconfrostbiteimg">
+							
+									<img src="images/falconfrostbite.png" alt="Falcon Frost Bite Snowcone" height="220px" width="220px;">
+								
+								</div>
+							
+								<div id="falconfrostbitep">
+							
+									<h3> Falcon Frost Bite $3.99 </h3>
+							
+									<p> Falcon Frost Bite has a blue lemonade base with a drizzle of lime flavored syrup. The sourness of the lime and lemonade can bite you. </p>
+								
+								</div>
+							
+							</div>
+						</th>
+						<th>
+						
+							<div class="aurorafalcon">
+						
+								<div id="aurorafalconimg">
+							
+									<img src="images/aurorafalcon.png" alt="Aurora Falcon Snowcone" height="230px" width="230px">
+								
+								</div>
+							
+								<div id="aurorafalconp">
+							
+									<h3> Aurora Falcon $3.99 </h3><br>
+								
+									<p> The Aurora Falcon is based on the Aurora Borealis. It's base is lychee with tiny drizzles of blue raspberry, green apple, and cherry. </p>
+								
+								</div>
+							
+							</div>
+						
+						</div>
+						</th>
+					</tr>
+					<tr>
+					
+						<div class="signaturesnowcones-bottom">
+					
+							<th>
+					
+								<div class="goldenfeather">
+			
+									<div id="goldenfeatherimg">
+							
+										<img src="images/goldenfeather.png" alt="Golden Feather Snowcone" height="230px" width="230px">
+								
+									</div>
+							
+							
+									<div id="goldenfeatherp">
+							
+										<h3> Golden Feather $3.99 </h3><br>
+							
+										<p> The golden feather has a base of mango and tiny drizzles of pina colada.</p>
+								
+									</div>
+									
+								</div>
+							
+							</th>
+						
+							<th>
+						
+								<div class="swirlingblue">
+							
+									<div id="swirlingblueimg">
+								
+										<img src="images/swirlingblue.png" alt="Swirling Blue Snowcone" height="200px" width="210px">
+									
+									</div>
+								
+									<div id="swirlingbluep">
+								
+										<h3> Swirling Blue $3.99 </h3><br>
+									
+										<p> Swirling Blue has a swirl of blue rasberry in the middle and a base of blueberry lemonade.</p>
+									
+									</div>
+								
+								</div>
+							
+							</th>
+						
+							<th>
+							
+								<div class="falconsmelonpop">
+							
+									<div id="falconsmelonpopimg">
+								
+										<img src="images/falconsmelonpop.png" alt="Falcon's Melon Pop snowcone" height="230px" width="230px">
+									
+									</div>
+								
+									<div id="falconsmelonpopp">
+								
+										<h3> Falcon's Melon Pop $3.99 </h3><br>
+									
+										<p> Falcon's Melon Pop consists of a watermelon base with some lemon-lime to get that fizz </p>
+									
+									</div>
+								
+								</div>
+						
+							</th>
+							
+						</div>
+					
+						</tr>			
+				
+						<tr>
+					
+							<th> 
+							
+								<h1 style="font-size: 36px"> Snowcones </h1><br><br>
+							
+							</th>
+						
+						</tr>
+					
+						<tr>
+						
+							<div class="snowcone-top">
+								
+								<th>	
+							
+									<div class="strawberry">
+								
+										<div id="strawberryimg">
+									
+											<img src="images/strawberry.png" alt="Strawberry Snowcone" height="230px" width="230px">
+										
+										</div>
+									
+										<div id="strawberryp">
+										
+											<h3> Strawberry $3.99 </h3>
+									
+										</div>
+							
+									</div>
+								
+								</th>
+						
+								<th>
+								
+									<div class="blueraspberry">
+									
+										<div id="blueraspberryimg">
+										
+											<img src="images/blueraspberry.png" alt=" Blue Raspberry Snowcone" height="230px" width="230px">
+											
+										</div>
+										
+										<div id="blueraspberryp">
+										
+											<h3> Blue Raspberry $3.99 </h3>
+											
+										</div>
+										
+									</div>
+									
+								</th>
+								
+								<th>
+								
+									<div class="grape">
+									
+										<div id="grapeimg">
+										
+											<img src="images/grape.png" alt="Grape Snowcone" height="230px" width="230px">
+											
+										</div>
+										
+										<div id="grapep">
+										
+											<h3> Grape $3.99 </h3>
+											
+										</div>
+										
+									</div>
+									
+								</th>
+								
+								<th>
+								
+							</div>
+							
+						</tr>
+						
+						<tr>
+						
+							<div class="snowcone-bottom">
+							
+								<th>
+								
+									<div class="lemonlime">
+									
+										<div id="lemonlimeimg">
+										
+											<img src="images/lemonlime.png" alt="Lemon-Lime Snowcone" height="230px" width="230px">
+											
+										</div>
+										
+										<div id="lemonlimep">
+										
+											<h3> Lemon-Lime $3.99 </h3>
+											
+										</div>
+										
+									</div>
+									
+								</th>
+								
+								<th>
+								
+									<div class="cherry">
+										
+										<div id="cherryimg">
+										
+											<img src="images/cherry.png" alt="cherry snowcone" height="200px" width="200px">
+											
+										</div>
+										
+										<div id="cherryp">
+												
+											<h3> Cherry $3.99 </h3>
+											
+										</div>
+										
+									</div>
+									
+								</th>
+								
+								<th>
+								
+									<div class="pinacolada">
+									
+										<div id="pinacoladaimg">
+										
+											<img src="images/pinacolada.png" alt="pina colada snowcone" height="230px" width="230px">
+											
+										</div>
+										
+										<div id="pinacoladap">
+											
+											<h3> Pina Colada $3.99 </h3>
+											
+										</div>
+										
+									</div>
+									
+								</th>
+										
+									
+								
+							</div>
+							
+						</tr>
+						
+					</table>
+							
+			</main>
+			
+			<hr>
+			
+			<footer>
+			
+				<div class="footer-top">
+				
+					<div class="socials">
+				
+						<a href="https://www.facebook.com"><img src="images/facebook.png" height="79px" width="79px"alt="facebook logo"></a>
+						<a href="https://www.instagram.com"><img src="images/instagram.png" height="90px" width="90px" alt="instagram logo"></a>
+						<a href="https://www.tiktok.com"><img src="images/tiktok.png" height="56px" width="99px" alt="tiktok logo"></a>
+						<a href="https://www.x.com"><img src="images/x.png" height="50px" width="50px" alt="x logo"></a>
+						<a href="https://www.youtube.com"><img src="images/youtube.png" height="82px" width="82px" alt="youtube logo"></a>
+					
+					</div>
+				
+					<div class="contact">
+				
+						<a href="contactus.html"><button id="contactus"> Contact Us </a></button>
+					
+					</div>
+				
+				</div>
+				
+				<div class="footer-bottom">
+				
+						 Terms of Services &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+						 Private Notice &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Accessibility &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Feedback &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 Copyright
+					
+				</div>
+				
+			</footer>
+			
+		</body>
+		
+	</html>
